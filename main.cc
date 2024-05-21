@@ -34,6 +34,7 @@ int main() {
   obstacle_1.Sleep(10);
   obstacle_2.Sleep(20);
   obstacle_1.Walk();
+  execution.set_code_block_condition_satisfied(true);
 
   proto::ObstacleCodePathReport obstacle_code_path_report_pb;
   common::ObstacleCodePathReport::Instance()->SerializeToPb(
